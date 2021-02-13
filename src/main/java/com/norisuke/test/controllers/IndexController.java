@@ -12,6 +12,7 @@ public class IndexController {
     @Autowired private NameService service;
     
     // Comment Add
+    // Comment2 Add
     @RequestMapping({"/","/index"})
     public ModelAndView get(ModelAndView mav){
         mav.addObject("names", service.getAll());
