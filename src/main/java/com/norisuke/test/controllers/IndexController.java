@@ -11,10 +11,11 @@ import org.springframework.web.servlet.ModelAndView;
 public class IndexController {
     @Autowired private NameService service;
     
+    // Comment Add
     @RequestMapping({"/","/index"})
     public ModelAndView get(ModelAndView mav){
         mav.addObject("names", service.getAll());
-        mav.setViewName("index");
+        mav.setViewName("index"); 
         return mav;
     }
 }
